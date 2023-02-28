@@ -1,0 +1,241 @@
+/*ZA SVE STRANE*/
+*{
+	padding:0px;
+	margin:0px;
+	font-family:'Poppins',sans-serif;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+#glava{
+	height:50px;
+	padding:18px;
+}
+#glava #g1{
+	display:block;
+	float:left;
+	width:7%;
+	height:100%;
+}
+#glava #g1 img{
+	height:100%;
+	width:100%;
+	display:block;
+}
+#glava #g2 h1{
+	display:block;
+	float:left;
+  	margin-left:20px;
+	color:#6f280d;
+}
+.cleaner{
+	clear:both;
+}
+#navigacija{
+	background-color:#6f280d;
+	margin:auto;
+	width:100%;
+}
+#navigacija ul{
+	width:85%;
+	margin:auto;
+}
+#navigacija ul li{
+	display:block;
+	float:left;
+	width:20%;
+	text-align:center;
+	padding:20px 0px;
+	font-size:1.2em;
+	background-color:#6f280d;
+	transition: background-color 1s ease;
+}
+#navigacija li:hover{
+	background-color:#b08e62;
+}
+#navigacija a{
+	color:white;
+}
+.active{
+	background-color:#b08e62 !important;
+}
+main{
+	background-color:#b08e62;
+}
+#futer{
+	padding:50px;
+	text-align:center;
+	color:white;
+	background-color:#6f280d;
+}
+
+/*POCETNA STRANA*/
+#pozadina{
+	width:100%;
+	height:600px;
+	background-image:url("../img/pocetna-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position:relative;
+}
+#pozadina-tamna{
+	background-color:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	bottom: 0px;
+	text-align:center;
+	margin:auto;
+	width:100%;
+	height:600px;
+	color:white;
+}
+
+
+/*O NAMA*/
+/*GALERIJA*/
+#galerija-pun{
+	width:80%;
+	padding:50px;
+	margin:auto;
+	box-sizing: border-box;
+}
+.galerija-red{
+	display:block;
+	margin:auto;
+	box-sizing: border-box;
+}
+.galerija-polje{
+	display:inline;
+	float:left;
+	width:33%;
+	height:400px;
+	padding:10px;
+	border-radius:20px;
+	box-sizing: border-box;
+}
+.galerija-polje img{
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius: 20px;
+}
+
+/*KONTAKT*/
+#kontakt-div{
+	width:85%;
+	padding:40px 0px 40px 0px;
+	margin:auto;
+}
+#kontakt-forma{
+	display:inline;
+	float:left;
+	position: relative;
+  	animation-name: ulaz-stranal;
+  	animation-duration: 1.5s; 
+}
+#kontakt-forma h2{
+	color:#6f280d;
+}
+#kontakt-forma input,#kontakt-forma textarea{
+	border:none;
+	border-bottom: 3px solid #6f280d;
+	color:#6f280d;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #b08e62;
+}
+#kontakt-forma input:focus,#kontakt-forma textarea:focus{
+	border:none;
+	background-color:#6f280d;
+	color:white;
+	outline:none;
+}
+input::placeholder,textarea::placeholder{
+	color:#6f280d;
+}
+input:focus::placeholder,textarea:focus::placeholder{
+	color:white;
+}
+#kontakt-forma button{
+	padding:5px 10px;
+	margin:5px;
+	color:#6f280d;
+	border:3px solid #6f280d;
+	background-color: white;
+	font-weight: bold;
+	transition: color 0.5s ease, background-color 0.5s ease;
+}
+#kontakt-forma button:hover{
+	color:white;
+	background-color:#6f280d;
+	cursor: pointer;
+}
+#kontakt-mapa{
+	display: inline;
+	float:right;
+	border: 3px solid #6f280d;
+	border-radius:20px;
+	position: relative;
+  	animation-name: ulaz-stranad;
+  	animation-duration: 1.5s; 
+	margin:auto;
+}
+#kontakt-mapa iframe{
+	border-radius:20px;
+	display:block;
+}
+
+/*AUTOR SAJT*/
+#autor-slika{
+	padding:50px;
+}
+#autor-slika img{
+	border-radius: 50%;
+	border:5px solid #6f280d;
+	display: block;
+	margin:auto;
+	position: relative;
+  	animation-name: ulaz-odozgo;
+  	animation-duration: 1.5s; 
+}
+#autor-text{
+	text-align: center;
+	padding:0px 50px 50px 50px;
+}
+#autor-text h2,#autor-text h3,#autor-text p{
+	position: relative;
+	color:white;
+  	animation-name: ulaz-odozgo;
+  	animation-duration: 1.5s; 
+}
+
+/*ANIMACIJE*/
+@keyframes ulaz-odozgo{
+	from{
+		top:-1200px;
+	}
+	to{
+		top:0px;
+	}
+}
+@keyframes ulaz-stranad{
+	from{
+		right:-1000px;
+	}
+	to{
+		right:0px;
+	}
+}
+@keyframes ulaz-stranal{
+	from{
+		left:-1000px;
+	}
+	to{
+		left:0px;
+	}
+}
