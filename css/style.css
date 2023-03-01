@@ -71,6 +71,29 @@ main{
 	color:white;
 	background-color:#6f280d;
 }
+#futer-div{
+	width:90%;
+	margin:auto;
+}
+.futer-red{
+	display:inline;
+	float:left;
+	width:33%;
+	color:white;
+}
+.centar{
+	margin:auto;
+	display: block;
+	text-align: center;
+	box-sizing: border-box;
+}
+.ikonice i{
+	font-size: 30px;
+	padding:10px;
+}
+.futer-red a{
+	color:white;
+}
 
 /*POCETNA STRANA*/
 #pozadina{
