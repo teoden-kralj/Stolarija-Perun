@@ -111,7 +111,7 @@ main{
 /*POCETNA STRANA*/
 #pocetna-pozadina{
 	width:100%;
-	height:600px;
+	height:700px;
 	background-image:url("../img/pocetna-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -125,7 +125,7 @@ main{
 	padding:400px 0px 0px 0px;
 	text-align:center;
 	width:100%;
-	height:600px;
+	height:700px;
 	color:white;
 }
 #pocetna-pozadina-tamna h2{
@@ -139,6 +139,52 @@ main{
 	position: relative;
 	animation-name: ulaz-odozgo;
   	animation-duration: 1.5s; 
+}
+#pocetna-div{
+	width:100%;
+}
+.pocetna-red{
+	width:60%;
+	margin:auto;
+	background-color: #b08e62;
+	color: white;
+}
+.pocetna-polje-l img, .pocetna-polje-d img{
+	width:100%;
+	height:100%;
+	border-radius: 20px;
+	transition: transform 0.5s ease;
+}
+.pocetna-polje-l img:hover, .pocetna-polje-d img:hover{
+	transform: scale(1.1);
+}
+.pocetna-polje-l{
+	display: inline;
+	float:left;
+	width:50%;
+	height:500px;
+	padding:30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+.pocetna-polje-d{
+	display: inline;
+	float:right;
+	width:50%;
+	height:500px;
+	padding:30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+#sredina{
+	width:60%;
+	background-color: white;
+	color:#6f280d;
+	margin:auto;
+	border-radius: 20px;
+}
+#sredina h3{
+	text-align:right;
 }
 
 
