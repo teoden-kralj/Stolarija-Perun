@@ -225,8 +225,15 @@ main{
 	float:right;
 	width:25%;
 }
+#o-nama-l img{
+	float: left;
+	width: 250px;
+	height: 350px;
+}
 #o-nama-d img{
 	float:right;
+	width: 250px;
+	height: 350px;
 }
 #o-nama-l img,#o-nama-d img{
 	transition: transform 0.5s ease;
