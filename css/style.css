@@ -1,4 +1,7 @@
 /*ZA SVE STRANE*/
+html{
+	scroll-behavior: smooth;
+}
 *{
 	padding:0px;
 	margin:0px;
@@ -19,6 +22,10 @@ a{
 	float:left;
 	width:7%;
 	height:100%;
+	transition: transform 1.5s ease;
+}
+#glava #g1:hover{
+	transform: rotateY(180deg);
 }
 #glava #g1 img{
 	height:100%;
@@ -44,12 +51,11 @@ a{
 	margin:auto;
 }
 #navigacija ul li{
-	display:block;
+	display:inline;
 	float:left;
 	width:20%;
 	text-align:center;
-	padding:20px 0px;
-	font-size:1.2em;
+	font-size:1.1em;
 	background-color:#6f280d;
 	transition: background-color 1s ease;
 }
@@ -58,12 +64,14 @@ a{
 }
 #navigacija a{
 	color:white;
+	display: block;
+	padding:15px 0px;
 }
 .active{
 	background-color:#b08e62 !important;
 }
 main{
-	background-color:#b08e62;
+	background-color:white;
 }
 #naslov{
 	text-align: center;
@@ -79,7 +87,7 @@ main{
 	border: none;
 }
 #futer{
-	padding:50px;
+	padding:30px;
 	text-align:center;
 	color:white;
 	background-color:#6f280d;
@@ -91,18 +99,18 @@ main{
 .futer-red{
 	display:inline;
 	float:left;
-	width:33%;
+	width:33.3%;
 	color:white;
 }
-.centar{
-	margin:auto;
-	display: block;
-	text-align: center;
-	box-sizing: border-box;
+.futer-red img{
+	height:168px;
+	width:300px;
 }
-.ikonice i{
-	font-size: 30px;
-	padding:10px;
+#prava{
+	padding-top:30px;
+}
+#ikonice i{
+	padding:5px;
 }
 .futer-red a{
 	color:white;
@@ -111,7 +119,7 @@ main{
 /*POCETNA STRANA*/
 #pocetna-pozadina{
 	width:100%;
-	height:700px;
+	height:500px;
 	background-image:url("../img/pocetna-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -122,29 +130,35 @@ main{
 	background-color:rgba(0, 0, 0, 0.5);
 	position:absolute;
 	box-sizing: border-box;
-	padding:400px 0px 0px 0px;
 	text-align:center;
 	width:100%;
-	height:700px;
+	height:500px;
 	color:white;
 }
 #pocetna-pozadina-tamna h2{
 	font-size: 30px;
 	position: relative;
-	animation-name: ulaz-odozgo;
-  	animation-duration: 1.5s; 
+	animation-name: ulaz-pocetna;
+  	animation-duration: 1.5s;
+	top:300px; 
 }
 #pocetna-pozadina-tamna p{
 	font-size: 20px;
 	position: relative;
-	animation-name: ulaz-odozgo;
+	top:300px;
+	animation-name: ulaz-pocetna;
   	animation-duration: 1.5s; 
 }
 .pocetna-red{
 	width:70%;
 	margin:auto;
-	background-color: #b08e62;
-	color: white;
+	margin-top: 20px;
+	background-color: white;
+	color: #6f280d;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .pocetna-polje-l img, .pocetna-polje-d img{
 	width:100%;
@@ -156,16 +170,23 @@ main{
 	transform: scale(1.1);
 }
 .pocetna-polje-l{
-	display: inline;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
 	float:left;
 	width:50%;
 	height:500px;
 	padding:30px;
 	box-sizing: border-box;
 	text-align: justify;
+	margin:auto;
 }
 .pocetna-polje-d{
-	display: inline;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
 	float:right;
 	width:50%;
 	height:500px;
@@ -174,11 +195,7 @@ main{
 	text-align: justify;
 }
 #sredina{
-	width:70%;
-	background-color: white;
-	color:#6f280d;
-	margin:auto;
-	border-radius: 20px;
+	box-shadow: 0px 0px 5px;
 }
 #sredina h3{
 	text-align:right;
@@ -188,7 +205,7 @@ main{
 /*O NAMA*/
 #o-nama-pozadina{
 	width:100%;
-	height:700px;
+	height:500px;
 	background-image:url("../img/o-nama-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -196,44 +213,36 @@ main{
 	position:relative;
 }
 #o-nama-div{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
 	text-align: justify;
 	margin: auto;
 	width:85%;
-	color:white;
+	color:#6f280d;
+	padding:20px 0px 20px 0px;
 }
 #o-nama-div img{
 	border-radius: 10px;
 }
 #o-nama-l{
-	padding: 20px;
-	box-sizing: border-box;
-	display: block;
-	float:left;
 	width:25%;
 }
 #o-nama-sredina{
-	padding: 20px;
-	box-sizing: border-box;
 	width:50%;
-	display: inline;
-	float:left;
 }
 #o-nama-d{
-	padding: 20px;
-	box-sizing: border-box;
-	display: block;
-	float:right;
 	width:25%;
 }
 #o-nama-l img{
-	float: left;
 	width: 250px;
 	height: 350px;
 }
 #o-nama-d img{
-	float:right;
 	width: 250px;
 	height: 350px;
+	float: right;
 }
 #o-nama-l img,#o-nama-d img{
 	transition: transform 0.5s ease;
@@ -277,7 +286,7 @@ main{
 
 /*KONTAKT*/
 #kontakt-div{
-	width:85%;
+	width:75%;
 	padding:40px 0px 40px 0px;
 	margin:auto;
 }
@@ -299,7 +308,7 @@ main{
 	padding: 10px;
 	border-radius: 5px;
 	box-sizing: border-box;
-	background-color: #b08e62;
+	background-color: white;
 	width: 450px;
 }
 #kontakt-forma input[type="text"]{
@@ -313,7 +322,7 @@ main{
 	padding: 10px;
 	border-radius: 5px;
 	box-sizing: border-box;
-	background-color: #b08e62;
+	background-color: white;
 	width:450px;
 	height:220px;
 }
@@ -377,12 +386,20 @@ input:focus::placeholder,textarea:focus::placeholder{
 }
 #autor-text h2,#autor-text h3,#autor-text p{
 	position: relative;
-	color:white;
+	color:#6f280d;
   	animation-name: ulaz-odozgo;
   	animation-duration: 1.5s; 
 }
 
 /*ANIMACIJE*/
+@keyframes ulaz-pocetna{
+	from{
+		top:-1200px;
+	}
+	to{
+		top:300px;
+	}
+}
 @keyframes ulaz-odozgo{
 	from{
 		top:-1200px;

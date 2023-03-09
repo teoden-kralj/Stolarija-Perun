@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <rss version="2.0">
+       
+        <channel>
+        <title>Novosti</title>
+        <link>https://teoden-kralj.github.io/stolarija-perun/rss.xml</link>
+        <description>Novosti sa sajta Stolarije Perun</description>
+        <language>rs</language>
+        
+        <item>
+            <title>Vrste drveta</title>
+            <link>https://teoden-kralj.github.io/stolarija-perun/index.html/#sredina</link>
+            <description>Vrste drveta koje se koriste u Stolariji Perun</description>
+        </item>
+         <item>
+            <title>Neke novine kod Stolarije Perun</title>
+            <link>https://teoden-kralj.github.io/stolarija-perun/index.html/</link>
+            <description>Novine kod Stolarije Perun</description>
+        </item>
+
+        </channel>
+
+    </rss>
